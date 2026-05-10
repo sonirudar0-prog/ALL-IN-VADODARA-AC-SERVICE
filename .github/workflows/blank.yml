@@ -1,0 +1,394 @@
+# This is a basic workflow to help you get started with Actions
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cool Air Service</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#0099ff;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin:0 15px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#0099ff;
+}
+
+/* HERO */
+
+.hero{
+    width:100%;
+    min-height:95vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1470&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-content{
+    max-width:650px;
+    color:white;
+}
+
+.hero-content h1{
+    font-size:65px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00a2ff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#007ad1;
+}
+
+/* SECTION */
+
+section{
+    padding:80px 8%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.title h2{
+    font-size:42px;
+    color:#0099ff;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    font-size:28px;
+    color:#0099ff;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:40px;
+    font-weight:bold;
+    margin:20px 0;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-text h2{
+    font-size:45px;
+    margin-bottom:20px;
+    color:#0099ff;
+}
+
+.about-text p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.contact-box h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#0099ff;
+}
+
+.contact-box p{
+    margin:15px 0;
+    font-size:20px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0c1724;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero-content h1{
+    font-size:45px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Cool Air Service</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Professional AC & Jet Pump Service</h1>
+
+<p>
+Fast, affordable and trusted air conditioner cleaning and jet pump services for your home and office.
+</p>
+
+<a href="tel:8469401621" class="btn">Book Service</a>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section>
+
+<div class="title">
+<h2>Our Services</h2>
+</div>
+
+<div class="services">
+
+<div class="card">
+<h3>Jet Pump Service</h3>
+
+<p>
+Complete cleaning and servicing for better cooling and performance.
+</p>
+
+<div class="price">₹450</div>
+
+<a href="tel:8469401621" class="btn">Call Now</a>
+
+</div>
+
+<div class="card">
+<h3>Jet Pump + Foam Service</h3>
+
+<p>
+Deep foam cleaning with jet service for powerful cooling and fresh air.
+</p>
+
+<div class="price">₹549</div>
+
+<a href="tel:8469401621" class="btn">Book Now</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1470&auto=format&fit=crop" alt="AC Cleaning">
+
+<div class="about-text">
+
+<h2>Why Choose Us?</h2>
+
+<p>
+We provide premium AC cleaning and repair service with professional tools and expert technicians. 
+Get fast service, affordable pricing and cool fresh air for your home and office.
+</p>
+
+<br>
+
+<a href="tel:8469401621" class="btn">Contact Us</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
+
+<div class="contact-box">
+
+<h2>Contact Us</h2>
+
+<p><strong>Phone:</strong> 8469401621</p>
+
+<p><strong>Email:</strong> sonirudar0@gmail.com</p>
+
+<p>
+Available for home AC service booking anytime.
+</p>
+
+<a href="tel:8469401621" class="btn">Call Now</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Cool Air Service | All Rights Reserved
+
+</footer>
+
+</body>
+</html>
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
